@@ -32,7 +32,7 @@
 class Rotate_array:
 
     def rotated_array(self,arr,d):
-
+        d = d % len(arr)
         for i in range(d):
             left = arr[0]
             arr.pop(0)
